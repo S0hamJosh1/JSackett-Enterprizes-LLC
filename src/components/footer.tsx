@@ -1,4 +1,10 @@
 import { Mail, Phone } from "lucide-react";
+import {
+  CONTACT_EMAIL,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_HREF,
+  GMAIL_COMPOSE_URL,
+} from "@/lib/contact";
 
 const quickLinks = [
   { label: "Home", href: "#home" },
@@ -24,9 +30,6 @@ export function Footer() {
           <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(320px,420px)] gap-12 lg:gap-16 mb-16">
             <div className="space-y-10">
               <div className="space-y-4">
-                <span className="font-heading text-3xl text-cream tracking-wide">
-                  JSackett Enterprizes LLC
-                </span>
                 <p className="max-w-xl text-base text-cream/60 leading-relaxed">
                   Licensed in New Jersey - LCSW, with WPS patient advocacy and
                   practical support tailored to complex life situations.
@@ -68,38 +71,51 @@ export function Footer() {
             </div>
 
             <div className="rounded-[2rem] border border-cream/10 bg-cream/5 p-6 lg:p-8 self-start">
+              <p className="text-sm text-cream/60 leading-relaxed mb-6">
+                JoAnn prefers to speak with patients directly first, since most
+                situations need a real conversation before deciding next steps.
+              </p>
+
               <div className="space-y-3">
                 <a
-                  href="mailto:jsackettenterprizes@gmail.com"
+                  href={CONTACT_PHONE_HREF}
+                  className="flex items-center gap-3 rounded-full border border-cream/10 bg-cream/5 px-4 py-3 text-cream/75 hover:text-cream hover:border-cream/20 transition-colors"
+                >
+                  <Phone size={18} />
+                  <span className="text-sm sm:text-base">
+                    Call {CONTACT_PHONE_DISPLAY}
+                  </span>
+                </a>
+                <a
+                  href={GMAIL_COMPOSE_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex items-center gap-3 rounded-full border border-cream/10 bg-cream/5 px-4 py-3 text-cream/75 hover:text-cream hover:border-cream/20 transition-colors"
                 >
                   <Mail size={18} />
                   <span className="text-sm sm:text-base">
-                    jsackettenterprizes@gmail.com
+                    Open Gmail
                   </span>
                 </a>
-                <a
-                  href="tel:+19082028850"
-                  className="flex items-center gap-3 rounded-full border border-cream/10 bg-cream/5 px-4 py-3 text-cream/75 hover:text-cream hover:border-cream/20 transition-colors"
-                >
-                  <Phone size={18} />
-                  <span className="text-sm sm:text-base">(908) 202-8850</span>
-                </a>
               </div>
+
+              <p className="mt-3 text-xs text-cream/45">
+                Gmail address: {CONTACT_EMAIL}
+              </p>
 
               <div className="mt-8 pt-8 border-t border-cream/10">
                 <h3 className="text-sm font-semibold text-cream/50 tracking-wide uppercase mb-4">
                   Ready to Start?
                 </h3>
                 <p className="text-sm text-cream/60 leading-relaxed mb-6">
-                  Reach out to schedule a consultation and talk through what
-                  support would be most helpful.
+                  Call JoAnn directly, or use Gmail if you want to send a quick
+                  note before talking.
                 </p>
                 <a
-                  href="mailto:jsackettenterprizes@gmail.com"
+                  href={CONTACT_PHONE_HREF}
                   className="inline-flex items-center justify-center w-full px-6 py-2.5 bg-cream text-forest text-sm font-medium rounded-full hover:bg-cream-dark transition-colors"
                 >
-                  Book a Consultation
+                  Call JoAnn
                 </a>
               </div>
             </div>
@@ -108,8 +124,7 @@ export function Footer() {
 
         <div className="border-t border-cream/10 py-6">
           <p className="text-xs text-cream/40 text-center">
-            &copy; {new Date().getFullYear()} JSackett Enterprizes LLC. All
-            rights reserved.
+            &copy; {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
       </div>

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { CONTACT_PHONE_HREF } from "@/lib/contact";
+import { LogoMark } from "@/components/logo-mark";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -18,10 +20,9 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/80 backdrop-blur-md border-b border-border/40">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <a href="#home" className="flex items-center gap-2">
-            <span className="font-heading text-lg sm:text-xl lg:text-2xl text-forest tracking-wide">
-              JSackett Enterprizes LLC
-            </span>
+          <a href="#home" className="inline-flex items-center min-w-0">
+            <LogoMark className="w-[72px] sm:w-[88px] shrink-0" />
+            <span className="sr-only">JSackett Enterprizes LLC</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
@@ -38,10 +39,10 @@ export function Navbar() {
 
           <div className="hidden md:block">
             <a
-              href="#contact"
+              href={CONTACT_PHONE_HREF}
               className="inline-flex items-center justify-center px-6 py-2.5 bg-forest text-cream text-sm font-medium rounded-full hover:bg-forest-light transition-colors"
             >
-              Book a Consultation
+              Call JoAnn
             </a>
           </div>
 
@@ -69,11 +70,11 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="#contact"
+              href={CONTACT_PHONE_HREF}
               onClick={() => setMobileOpen(false)}
               className="inline-flex items-center justify-center px-6 py-2.5 bg-forest text-cream text-sm font-medium rounded-full hover:bg-forest-light transition-colors mt-2"
             >
-              Book a Consultation
+              Call JoAnn
             </a>
           </div>
         </div>

@@ -4,6 +4,7 @@ import { useScreenSize } from "@/hooks/use-screen-size";
 import { PixelTrail } from "@/components/ui/pixel-trail";
 import { GooeyFilter } from "@/components/ui/gooey-filter";
 import { Star } from "lucide-react";
+import { CONTACT_PHONE_HREF, GMAIL_COMPOSE_URL } from "@/lib/contact";
 
 export function HeroSection() {
   const screenSize = useScreenSize();
@@ -62,10 +63,10 @@ export function HeroSection() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#contact"
+            href={CONTACT_PHONE_HREF}
             className="inline-flex items-center justify-center px-8 py-3.5 bg-forest text-cream font-medium rounded-full hover:bg-forest-light transition-colors text-base"
           >
-            Schedule a Call
+            Call JoAnn
           </a>
           <a
             href="#services"
@@ -74,6 +75,18 @@ export function HeroSection() {
             See My Services
           </a>
         </div>
+        <p className="mt-4 text-sm text-forest/65">
+          Prefer writing first?{" "}
+          <a
+            href={GMAIL_COMPOSE_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium text-forest underline underline-offset-4"
+          >
+            Open Gmail
+          </a>{" "}
+          to send a short note.
+        </p>
       </div>
     </section>
   );

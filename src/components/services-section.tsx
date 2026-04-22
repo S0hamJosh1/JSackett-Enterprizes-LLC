@@ -9,6 +9,34 @@ import {
   HandHelping,
 } from "lucide-react";
 
+const topSpecialties = [
+  "Geriatric and Seniors",
+  "Chronic Pain",
+  "Caregivers",
+];
+
+const areasOfFocus = [
+  "Anxiety",
+  "Behavioral Issues",
+  "Bipolar Disorder",
+  "Chronic Impulsivity",
+  "Coping Skills",
+  "Depression",
+  "Emotional Disturbance",
+  "First Responders",
+  "Grief",
+  "Hoarding",
+  "LGBTQ+",
+  "Life Transitions",
+  "Mood Disorders",
+  "Parkinson's",
+  "Suicidal Ideation",
+  "Thinking Disorders",
+  "Trauma and PTSD",
+  "Traumatic Brain Injury (TBI)",
+  "Veterans",
+];
+
 const services = [
   {
     icon: Brain,
@@ -18,7 +46,7 @@ const services = [
   },
   {
     icon: HeartHandshake,
-    title: "Family Support",
+    title: "Caregiver & Family Support",
     description:
       "Guidance for families dealing with changing dynamics, caregiving responsibilities, or relationship strain from life stressors.",
   },
@@ -48,9 +76,9 @@ const services = [
   },
   {
     icon: HandHelping,
-    title: "Patient Advocacy",
+    title: "Care Coordination",
     description:
-      "Helping you communicate with providers, understand options, and advocate for the support you or your loved one needs.",
+      "Helping you communicate with providers, understand your options, and stay organized around the support you or your loved one needs.",
   },
   {
     icon: ArrowUpRight,
@@ -67,7 +95,7 @@ export function ServicesSection() {
       className="py-24 lg:py-32 bg-[linear-gradient(180deg,#D8DDCC_0%,#D2D8C6_100%)]"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
+        <div className="flex flex-col gap-6 mb-16">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-2 h-2 rounded-full bg-[#44513A]" />
@@ -81,12 +109,6 @@ export function ServicesSection() {
               whole situation
             </h2>
           </div>
-          <a
-            href="/book"
-            className="inline-flex items-center justify-center px-6 py-2.5 bg-[#3F4A33] text-cream text-sm font-medium rounded-full hover:bg-[#4D5940] transition-colors self-start lg:self-auto"
-          >
-            View All Services
-          </a>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -109,6 +131,50 @@ export function ServicesSection() {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 grid gap-5 xl:grid-cols-[280px_minmax(0,1fr)]">
+          <div className="bg-[#FAF7F0] rounded-2xl p-6 border border-[#D6D0BF]/70 shadow-[0_10px_24px_rgba(60,53,34,0.05)]">
+            <p className="text-xs font-semibold tracking-widest text-[#5D664F] uppercase mb-4">
+              Top Specialties
+            </p>
+            <ul className="space-y-3">
+              {topSpecialties.map((specialty) => (
+                <li key={specialty} className="text-[#263121] text-base">
+                  {specialty}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="bg-[#FAF7F0] rounded-2xl p-6 border border-[#D6D0BF]/70 shadow-[0_10px_24px_rgba(60,53,34,0.05)]">
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between mb-6">
+              <div>
+                <p className="text-xs font-semibold tracking-widest text-[#5D664F] uppercase mb-2">
+                  Areas of Focus
+                </p>
+                <p className="text-sm text-[#5F6255] leading-relaxed">
+                  Support for a wide range of ages, situations, and stages of
+                  life.
+                </p>
+              </div>
+              <p className="text-sm text-[#5F6255] leading-relaxed max-w-md">
+                Sessions are available by video or voice, with early bird,
+                evening, and weekend appointments when possible.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-3">
+              {areasOfFocus.map((area) => (
+                <div
+                  key={area}
+                  className="rounded-full border border-[#D6D0BF]/90 bg-[#F4EFE3] px-4 py-2.5 text-sm text-[#263121]"
+                >
+                  {area}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

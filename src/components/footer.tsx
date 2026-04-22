@@ -16,9 +16,9 @@ const quickLinks = [
 
 const serviceLinks = [
   "Individual Therapy",
-  "Family Support",
+  "Caregiver & Family Support",
   "Healthcare Navigation",
-  "Patient Advocacy",
+  "Life Transitions",
   "Crisis Intervention",
 ];
 
@@ -31,8 +31,8 @@ export function Footer() {
             <div className="space-y-10">
               <div className="space-y-4">
                 <p className="max-w-xl text-base text-cream/60 leading-relaxed">
-                  Licensed in New Jersey - LCSW, with WPS patient advocacy and
-                  practical support tailored to complex life situations.
+                  Licensed in New Jersey - LCSW, with practical support
+                  tailored to complex life situations.
                 </p>
               </div>
 
@@ -72,8 +72,9 @@ export function Footer() {
 
             <div className="rounded-[2rem] border border-cream/10 bg-cream/5 p-6 lg:p-8 self-start">
               <p className="text-sm text-cream/60 leading-relaxed mb-6">
-                JoAnn prefers to speak with patients directly first, since most
-                situations need a real conversation before deciding next steps.
+                Call JoAnn directly to schedule a free initial consultation or
+                questions call. If you decide to move forward, individual
+                sessions are $165.
               </p>
 
               <div className="space-y-3">
@@ -102,22 +103,10 @@ export function Footer() {
               <p className="mt-3 text-xs text-cream/45">
                 Gmail address: {CONTACT_EMAIL}
               </p>
-
-              <div className="mt-8 pt-8 border-t border-cream/10">
-                <h3 className="text-sm font-semibold text-cream/50 tracking-wide uppercase mb-4">
-                  Ready to Start?
-                </h3>
-                <p className="text-sm text-cream/60 leading-relaxed mb-6">
-                  Call JoAnn directly, or use Gmail if you want to send a quick
-                  note before talking.
-                </p>
-                <a
-                  href={CONTACT_PHONE_HREF}
-                  className="inline-flex items-center justify-center w-full px-6 py-2.5 bg-cream text-forest text-sm font-medium rounded-full hover:bg-cream-dark transition-colors"
-                >
-                  Call JoAnn
-                </a>
-              </div>
+              <p className="mt-3 text-xs text-cream/45">
+                Please avoid sharing confidential personal or medical details by
+                email.
+              </p>
             </div>
           </div>
         </div>

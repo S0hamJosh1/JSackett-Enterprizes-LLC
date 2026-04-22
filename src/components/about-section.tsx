@@ -22,7 +22,7 @@ const highlights = [
     icon: Users,
     title: "Whole-Person Support",
     description:
-      "Beyond counseling, I help with healthcare navigation, patient advocacy, and practical life management.",
+      "Beyond counseling, I help with healthcare navigation, care planning, and practical life management.",
   },
 ];
 
@@ -45,33 +45,27 @@ export function AboutSection() {
 
             <div className="space-y-5 text-forest/70 leading-relaxed text-base lg:text-lg">
               <p>
-                I&apos;m JoAnn Sackett, an LCSW licensed in New Jersey with more
+                I'm JoAnn Sackett, an LCSW licensed in New Jersey with more
                 than 26 years of experience. I support individuals and families
-                facing emotional distress, disabilities, major life changes, or
-                overwhelming home situations.
+                facing emotional distress, disabilities, caregiving demands,
+                major life changes, or overwhelming home situations.
               </p>
               <p>
                 Instead of only talking through problems, I help you understand
-                what&apos;s going on, figure out what needs to be done, and
+                what's going on, figure out what needs to be done, and
                 actually take the next steps. This can include counseling and
                 support for anxiety, depression, trauma, or grief, while also
-                extending into healthcare navigation, WPS patient advocacy,
-                connecting with the right services, and dealing with difficult
-                living situations.
+                helping with healthcare navigation, connecting with the right
+                services, and dealing with difficult living situations.
               </p>
               <p>
                 My approach is calm, practical, and structured - focused on
-                giving you clarity and a plan so you&apos;re not stuck trying to
-                figure everything out on your own.
+                giving you clarity and a plan so you're not stuck trying to
+                figure everything out on your own. I offer video and voice
+                sessions, with early bird, evening, and weekend appointments
+                available when possible.
               </p>
             </div>
-
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center px-8 py-3 bg-forest text-cream font-medium rounded-full hover:bg-forest-light transition-colors text-sm mt-8"
-            >
-              More About Me
-            </a>
           </div>
 
           <div className="bg-warm-white rounded-[2rem] overflow-hidden border border-border/50">
@@ -92,7 +86,7 @@ export function AboutSection() {
                 Licensed in New Jersey - LCSW
               </p>
               <p className="text-sm text-forest/60 leading-relaxed">
-                WPS Patient Advocacy
+                Practical support for complex life situations
               </p>
             </div>
           </div>

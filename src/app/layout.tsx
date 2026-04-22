@@ -16,9 +16,9 @@ const soria = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "JSackett Enterprizes LLC | Patient Advocacy & Support",
+  title: "JSackett Enterprizes LLC | Counseling & Practical Support",
   description:
-    "JoAnn Sackett, LCSW, is licensed in New Jersey and offers counseling support, patient advocacy, and practical guidance for individuals and families navigating complex life situations.",
+    "JoAnn Sackett, LCSW, offers counseling and practical support in New Jersey. Call for a free initial consultation; individual sessions are $165.",
 };
 
 export default function RootLayout({

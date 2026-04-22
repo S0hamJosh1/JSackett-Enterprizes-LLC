@@ -9,34 +9,44 @@ import {
 
 const faqs = [
   {
+    question: "How do I get started?",
+    answer:
+      "Call JoAnn directly to schedule a free initial consultation or questions call. You'll have a chance to describe what is going on, ask questions, and see whether this feels like the right fit before booking a session.",
+  },
+  {
     question: "What can I expect from my first session?",
     answer:
-      "In our first session, I listen to your concerns, understand your goals, and explain how we can work together. We&apos;ll talk about what&apos;s going on in your life - not just the emotional side, but the practical challenges too. You&apos;ll leave with a clear sense of the next steps and how I can help.",
+      "In our first session, I listen to your concerns, understand your goals, and explain how we can work together. We'll talk about what's going on in your life - not just the emotional side, but the practical challenges too. You'll leave with a clear sense of the next steps and how I can help.",
+  },
+  {
+    question: "How much does it cost?",
+    answer:
+      "The initial consultation or questions call is free. After that, individual sessions are $165 each.",
   },
   {
     question: "How is this different from traditional therapy?",
     answer:
-      "While I do provide counseling support for anxiety, depression, trauma, and grief, my practice goes beyond that. I also help with real-world challenges like navigating healthcare systems, patient advocacy, dealing with difficult living situations, and managing major life transitions. Think of it as one-stop support - emotional and practical, all in one place.",
+      "While I do provide counseling support for anxiety, depression, trauma, and grief, my practice goes beyond that. I also help with real-world challenges like navigating healthcare systems, dealing with difficult living situations, and managing major life transitions. Think of it as one-stop support - emotional and practical, all in one place.",
   },
   {
     question: "Do you offer online sessions?",
     answer:
-      "Yes, I offer secure online sessions for clients who prefer the convenience of meeting from home. Virtual sessions are just as effective for many of the services I provide, including counseling support, patient advocacy, and consultation.",
+      "Yes, I offer secure video and voice sessions for clients who prefer the convenience of meeting from home. Early bird, evening, and weekend appointments are also available when possible.",
   },
   {
     question: "What types of situations do you help with?",
     answer:
-      "I work with a wide range of challenges: anxiety, depression, trauma, grief, disability, caregiving stress, hoarding and unsafe home environments, family dynamics, recovery after accidents, aging transitions, and more. If you&apos;re dealing with something that feels too complicated for just counseling alone, that&apos;s exactly what I specialize in.",
+      "I work with a wide range of challenges: anxiety, depression, trauma, grief, chronic pain, caregiving stress, hoarding and unsafe home environments, family dynamics, recovery after accidents, aging transitions, and more. If you're dealing with something that feels too complicated for just counseling alone, that's exactly what I specialize in.",
   },
   {
     question: "How long does the support process usually take?",
     answer:
-      "It depends entirely on your situation. Some clients need short-term crisis support, while others benefit from longer-term guidance through complex transitions. We&apos;ll discuss timelines together and adjust as your needs evolve. There&apos;s no one-size-fits-all - we go at your pace.",
+      "It depends entirely on your situation. Some clients need short-term crisis support, while others benefit from longer-term guidance through complex transitions. We'll discuss timelines together and adjust as your needs evolve. There's no one-size-fits-all - we go at your pace.",
   },
   {
     question: "How do I know if this is the right fit for me?",
     answer:
-      "If you&apos;re feeling overwhelmed by a situation that involves more than just your emotions - where you need both support and a practical plan - this is likely a great fit. The best way to find out is to schedule a consultation. We&apos;ll talk through what you&apos;re facing and I&apos;ll honestly tell you if I&apos;m the right person to help.",
+      "If you're feeling overwhelmed by a situation that involves more than just your emotions - where you need both support and a practical plan - this is likely a great fit. The best way to find out is to call for a free consultation. We'll talk through what you're facing and I'll honestly tell you if I'm the right person to help.",
   },
 ];
 

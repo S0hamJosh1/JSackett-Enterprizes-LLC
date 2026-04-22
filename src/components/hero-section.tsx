@@ -56,8 +56,8 @@ export function HeroSection() {
         </h1>
 
         <p className="text-lg lg:text-xl text-forest/70 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Therapy, guidance, and real-world help - all in one place. I help you
-          understand what&apos;s happening, figure out what to do, and take the
+          Therapy, guidance, and practical support - all in one place. I help
+          you understand what's happening, figure out what to do, and take the
           next step.
         </p>
 
@@ -76,6 +76,10 @@ export function HeroSection() {
           </a>
         </div>
         <p className="mt-4 text-sm text-forest/65">
+          Free initial consultation or questions call. Individual sessions are
+          $165.
+        </p>
+        <p className="mt-2 text-sm text-forest/65">
           Prefer writing first?{" "}
           <a
             href={GMAIL_COMPOSE_URL}

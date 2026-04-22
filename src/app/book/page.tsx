@@ -29,20 +29,24 @@ export default function BookPage() {
             </div>
 
             <h1 className="font-heading text-4xl lg:text-5xl text-forest leading-[1.08] mb-6">
-              Call first to get started
+              Call to schedule your consultation
             </h1>
 
             <div className="space-y-4 text-forest/65 leading-relaxed">
               <p>
-                JoAnn prefers to speak directly with patients rather than have
-                them sign in or self-book online. Most situations are more
-                personal than a simple class signup, so a real conversation is
-                the best place to start.
+                JoAnn prefers to speak directly with patients before booking.
+                The initial consultation or questions call is free and gives
+                you a chance to talk through what is going on before scheduling
+                a meeting.
               </p>
               <p>
-                If calling is not convenient, you can open Gmail and send a
-                short note. Please avoid sharing confidential personal or
-                medical details by email.
+                If it feels like the right fit, individual sessions are $165
+                each. If calling is not convenient, you can open Gmail and send
+                a short note instead.
+              </p>
+              <p>
+                Please avoid sharing confidential personal or medical details by
+                email.
               </p>
             </div>
 
@@ -78,6 +82,21 @@ export default function BookPage() {
                 What to expect
               </h2>
 
+              <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                <div className="rounded-[1.25rem] bg-warm-white border border-border/40 p-5">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-sage mb-2">
+                    Initial consultation
+                  </p>
+                  <p className="font-heading text-3xl text-forest">Free</p>
+                </div>
+                <div className="rounded-[1.25rem] bg-warm-white border border-border/40 p-5">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-sage mb-2">
+                    Individual sessions
+                  </p>
+                  <p className="font-heading text-3xl text-forest">$165</p>
+                </div>
+              </div>
+
               <div className="space-y-6 text-forest/70 leading-relaxed">
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide text-sage mb-2">
@@ -91,21 +110,25 @@ export default function BookPage() {
 
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide text-sage mb-2">
-                    2. Talk through your situation
+                    2. Have the free consultation call
                   </p>
                   <p>
-                    She will learn more about what is going on and help you
-                    figure out the right next step for your needs.
+                    She will learn more about what is going on, answer your
+                    questions, and help you figure out the right next step for
+                    your needs.
                   </p>
                 </div>
 
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide text-sage mb-2">
-                    3. Decide on support
+                    3. Schedule the right support
                   </p>
                   <p>
-                    From there, JoAnn can recommend the best fit, whether that
-                    is counseling, advocacy, guidance, or a more tailored plan.
+                    From there, JoAnn can recommend the best fit and schedule
+                    your next meeting, whether that is counseling, guidance, or
+                    a more tailored plan. Video and voice sessions are
+                    available, with early bird, evening, and weekend
+                    appointments when possible.
                   </p>
                 </div>
               </div>

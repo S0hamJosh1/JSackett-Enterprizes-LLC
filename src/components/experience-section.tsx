@@ -15,13 +15,13 @@ const stats = [
     label: "AREAS OF EXPERTISE",
     value: "12+",
     description:
-      "From counseling and crisis intervention to healthcare navigation, patient advocacy, and home environment support.",
+      "From counseling and crisis intervention to healthcare navigation, grief support, and home environment guidance.",
   },
   {
     label: "NJ LICENSURE",
     value: "LCSW",
     description:
-      "Licensed in New Jersey, with support that also includes WPS patient advocacy and practical guidance through complex situations.",
+      "Licensed in New Jersey, with practical guidance for individuals and families facing complex situations.",
   },
 ];
 
@@ -48,7 +48,7 @@ export function ExperienceSection() {
               deliver real progress. The goal is to bring everything together in
               one place - so instead of dealing with multiple providers and
               confusion, you have one trusted person helping you manage both the
-              emotional and practical sides of what you&apos;re facing.
+              emotional and practical sides of what you're facing.
             </p>
           </div>
         </div>

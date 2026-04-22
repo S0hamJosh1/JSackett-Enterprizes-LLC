@@ -21,7 +21,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <a href="#home" className="inline-flex items-center min-w-0">
-            <LogoMark className="w-[72px] sm:w-[88px] shrink-0" />
+            <LogoMark className="w-[56px] sm:w-[68px] shrink-0" />
             <span className="sr-only">JSackett Enterprizes LLC</span>
           </a>
 

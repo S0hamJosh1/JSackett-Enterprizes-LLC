@@ -7,10 +7,10 @@ export function PreviousSiteStrip() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-8 text-center sm:text-left">
           <div className="space-y-1">
             <p className="text-sm font-semibold text-forest">
-              Looking for JoAnn&apos;s previous practice?
+              Also from JoAnn: Let&apos;s Analyze That
             </p>
             <p className="text-sm text-forest/60 leading-relaxed">
-              Visit Let&apos;s Analyze That for her prior work with teens, adults, and seniors.
+              Virtual therapy for teens, adults, and seniors across New Jersey.
             </p>
           </div>
 
